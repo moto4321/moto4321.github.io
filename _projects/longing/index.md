@@ -34,18 +34,18 @@ Used for the title (already generated automatically at the top) -->
 
 Use this to have subsection if needed -->
 
-## Embedding images
+<!-- ## Embedding images
 
 ### External images
 
 {% include image-gallery.html images="https://live.staticflickr.com/65535/52821641477_d397e56bc4_k.jpg, https://live.staticflickr.com/65535/52822650673_f074b20d90_k.jpg" height="400"%}
-<span style="font-size: 10px">"Starship Test Flight Mission" from https://www.flickr.com/photos/spacex/52821641477/</span>  
-You can put in multiple entries. All images will be at a fixed height in the same row. With smaller window, they will switch to columns.
+<span style="font-size: 10px">"Starship Test Flight Mission" from https://www.flickr.com/photos/spacex/52821641477/</span>
+You can put in multiple entries. All images will be at a fixed height in the same row. With smaller window, they will switch to columns. -->
 
-### Embeed images
+### images
 
-{% include image-gallery.html images="project2.jpg" height="400" %}
-place the images in project folder/images then update the file path.
+{% include image-gallery.html images="IMG_0001.PNG, IMG_0003.PNG, IMG_0004.PNG, IMG_0005.PNG, IMG_9981.PNG, IMG_9982.PNG, IMG_9983.PNG, IMG_9984.PNG, IMG_9985.PNG, IMG_9986.PNG, IMG_9987.PNG, IMG_9988.PNG, IMG_9989.PNG, IMG_9990.PNG, IMG_9991.PNG, IMG_9992.PNG, IMG_9993.PNG, IMG_9994.PNG, IMG_9995.PNG, IMG_9996.PNG, IMG_9997.PNG, IMG_9999.PNG" height="400" %}
+
 
 <br>
 
