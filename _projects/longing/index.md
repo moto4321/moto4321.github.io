@@ -42,78 +42,8 @@ Use this to have subsection if needed -->
 <span style="font-size: 10px">"Starship Test Flight Mission" from https://www.flickr.com/photos/spacex/52821641477/</span>
 You can put in multiple entries. All images will be at a fixed height in the same row. With smaller window, they will switch to columns. -->
 
-### images
+### App images
 
 {% include image-gallery.html images="IMG_0001.PNG, IMG_0003.PNG, IMG_0004.PNG, IMG_0005.PNG, IMG_9981.PNG, IMG_9982.PNG, IMG_9983.PNG, IMG_9984.PNG, IMG_9985.PNG, IMG_9986.PNG, IMG_9987.PNG, IMG_9988.PNG, IMG_9989.PNG, IMG_9990.PNG, IMG_9991.PNG, IMG_9992.PNG, IMG_9993.PNG, IMG_9994.PNG, IMG_9995.PNG, IMG_9996.PNG, IMG_9997.PNG, IMG_9999.PNG" height="400" %}
 
-
 <br>
-
-## Adding a hozontal line
-
----
-
-## Starting a new line
-
-leave two spaces " " at the end or enter <br>
-
-## Adding bold text
-
-this is how you input **bold text**
-
-## Adding italic text
-
-Italicized text is the _cat's meow_.
-
-## Adding ordered list
-
-1. First item
-2. Second item
-3. Third item
-4. Fourth item
-
-## Adding unordered list
-
-- First item
-- Second item
-- Third item
-- Fourth item
-
-## Adding code block
-
-```ruby
-def hello_world
-  puts "Hello, World!"
-end
-```
-
-```python
-def start()
-  print("time to start!")
-```
-
-```javascript
-let x = 1;
-if (x === 1) {
-  let x = 2;
-  console.log(x);
-}
-console.log(x);
-```
-
-## Adding external links
-
-[Wikipedia](https://en.wikipedia.org)
-
-## Adding block quote
-
-> A blockquote would look great if you need to highlight something
-
-## Adding table
-
-| Header 1     | Header 2     |
-| ------------ | ------------ |
-| Row 1, Col 1 | Row 1, Col 2 |
-| Row 2, Col 1 | Row 2, Col 2 |
-
-make sure to leave aline betwen the table and the header
