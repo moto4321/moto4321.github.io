@@ -1,272 +1,327 @@
-# [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
+# Portfolio For Current and Aspiring Engineers
+How do you stand out and get hired in today's market? A strong portfolio demonstrates your technical skills and problem-solving in ways a resume just can't, giving you a clear advantage in your job search. Here, Lowinertia is prociding you all the tools you need to get started! Check out <a href="https://lowinertia.com/portfolio/stanley" target="_blank"> the demo page</a> made with free portfolio builder at lowinertia.com. Set up your portfolio within 2 minutes with smart resume import. Follow along the instruction below to setup and personalize your page. 
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.7-blue.svg)](https://jekyllrb.com/)
-[![Ruby gem](https://img.shields.io/gem/v/minimal-mistakes-jekyll.svg)](https://rubygems.org/gems/minimal-mistakes-jekyll)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?logo=paypal)](https://www.paypal.me/mmistakes)
+## There are two option:
+### 1. Self-host on github : free-to-engineer template
 
-Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building personal sites, blogs, and portfolios. As the name implies, styling is purposely minimalistic to be enhanced and customized by you :smile:.
+**NOTE:** If you are familiar with Jekyll and Github workflows, the initial setup would take about 30 minutes. If you are not familiar with Github and config and markdown files, this could be challenging and may take more than an hour.
 
-:sparkles: See what's new in the [CHANGELOG](CHANGELOG.md).
+### 2. Free No-code Portfolio Builder at [lowinertia.com](https://lowinertia.com)
 
-**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) to continue developing and maintaining it.**
+Portfolio builder made for engineers with 2 min onboarding with smart resume import. Vist [lowinertia.com](https://lowinertia.com) to find out more 
 
-[![Support via PayPal](https://cdn.jsdelivr.net/gh/twolfson/paypal-github-button@1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 
-**Note:** The theme uses the [jekyll-include-cache](https://github.com/benbalter/jekyll-include-cache) plugin which will need to be installed in your `Gemfile` and added to the `plugins` array of `_config.yml`. Otherwise you'll encounter `Unknown tag 'include_cached'` errors at build.
+# free-to-engineer-portflio-template instructions
 
-[![Minimal Mistakes live preview][2]][1]
+### 1. Setting Up Your Page on GitHub (5 min)
+- [Getting Started](#getting-started)
+- [Setup GitHub Account](#setup-github-account)
+- [Use the template](#Use-the-template)
 
-[1]: https://mmistakes.github.io/minimal-mistakes/
-[2]: screenshot.png (live preview)
 
-![layout examples](screenshot-layouts.png)
+### 2. Personalizing Your Portfolio (10+ min)
+- [Set Up Your Profile](#set-up-your-profile)
+  - [Open `_config.yml`](#open-_configyml)
+- [Adding Projects](#adding-projects)
+  - [Creating a Markdown File in GitHub](#creating-a-markdown-file-in-github)
 
-## Notable features
+### 3. Understanding Markdown for Your Project Page
+- [YAML Frontmatter](#yaml-frontmatter)
+- [Adding Contents](#adding-contents)
+  - [Section Title](#section-title)
+  - [Sub-Section Title](#sub-section-title)
+  - [Adding a New Line](#adding-a-new-line)
+  - [Adding a Horizontal Line](#adding-a-horizontal-line)
+  - [Embedding Images](#embedding-images)
+  - [Embedding YouTube Video](#embedding-youtube-video)
+  - [Adding Bold Text](#adding-bold-text)
+  - [Adding Italic Text](#adding-italic-text)
+  - [Adding Ordered List](#adding-ordered-list)
+  - [Adding Unordered List](#adding-unordered-list)
+  - [Adding Code Block](#adding-code-block)
+  - [Adding External Links](#adding-external-links)
+  - [Adding Block Quote](#adding-block-quote)
+  - [Adding Table](#adding-table)
 
-- Bundled as a "theme gem" for easier installation/upgrading.
-- Compatible with GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Nine different skins (color variations).
-- Several responsive layout options (single, archive index, search, splash, and paginated home page).
-- Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data.
-- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
-- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), Google+, [Discourse](https://www.discourse.org/), static-based via [Staticman](https://staticman.net/), and [utterances](https://utteranc.es/)).
-- [Google Analytics](https://www.google.com/analytics/) support.
-- UI localized text in English (default), Brazilian Portuguese (Português brasileiro), Catalan, Chinese, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hebrew, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Korean, Malayalam, Myanmar (Burmese), Nepali (Nepalese), Norwegian (Norsk), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), and Vietnamese.
 
-## Skins (color variations)
 
-This theme comes in nine different skins (in addition to the default one).
 
-| `air` | `contrast` | `dark` |
-| --- | --- | --- |
-| [![air skin](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/air-skin-archive-large.png) | [![contrast skin](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/contrast-skin-archive-large.png) | [![dark skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-archive-large.png) |
+## Getting Started:
 
-| `dirt` | `mint` | `sunrise` |
-| --- | --- | --- |
-| [![dirt skin](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/dirt-skin-archive-large.png) | [![mint skin](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/mint-skin-archive-large.png) | [![sunrise skin](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/sunrise-skin-archive-large.png) |
+### Setup GitHub Account
+1. **Visit GitHub**: If you don't have an account, go to [GitHub](https://github.com/) and sign up.
+2. **Create an Account**: Fill out the registration form with your preferred username, email, and password.
+3. **Verify Your Email**: Check your email to verify your account.
 
-| `aqua` | `neon` | `plum` |
-| --- | --- | --- |
-| [![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive-large.png) | [![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive-large.png) | [![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive-large.png) |
+### Use the template
+1. **Navigate to FreeToEngineer Repository**: Go to the repository where this portfolio template is [hosted](https://github.com/leea12/freeToEngineer)
+2. **Use the template**: Click the "Use this template" button at the top right of the page. Then, choose create a new repository. This creates a copy under your GitHub account. If you can also click on the "star", it will help the template to get visibility to many others!
 
-## Demo pages
+   ![GitHub Use Template](/assets/readme/github-use-template.png)
 
-| Name                                        | Description                                           |
-| ------------------------------------------- | ----------------------------------------------------- |
-| [Post with Header Image][header-image-post] | A post with a large header image. |
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
-| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection] | Single page from a collection. |
-| [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tag. |
+3. **[IMPORTANT] Name the repository**: in the "Repository name" field, type in `{your github id}.github.io`.This is also the url of your portfolio. You can use your custom domain as well. (change in the setting later)
 
-Additional sample posts are available under [posts archive][year-archive] on the demo site. Source files for these (and the entire demo site) can be found in [`/docs`](docs).
+   ![GitHub Use Template](/assets/readme/github-name-repository.png)
+4. Click "Create repository"
+5. **That's it!** Now, you have a portfolio webiste @ [your id].github.io. You may have to wait for up to 1 minute for github to finish building.
+6. **[Good to know]** you can see the status of your website by going to settings - pages.
+   ![GitHub Use Template](/assets/readme/github-pages.png)
 
-[header-image-post]: https://mmistakes.github.io/minimal-mistakes/layout-header-image-text-readability/
-[gallery-post]: https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/
-[html-tags-post]: https://mmistakes.github.io/minimal-mistakes/markup/markup-html-tags-and-formatting/
-[syntax-post]: https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting/
-[sample-collection]: https://mmistakes.github.io/minimal-mistakes/recipes/chocolate-chip-cookies/
-[categories-archive]: https://mmistakes.github.io/minimal-mistakes/categories/
-[tags-archive]: https://mmistakes.github.io/minimal-mistakes/tags/
-[year-archive]: https://mmistakes.github.io/minimal-mistakes/year-archive/
+## Set up Your profile
 
-## Installation
+### Open `_config.yml`
+This file contains the configuration settings for your site. Here's what you might want to change: 
+After you are done. just click **"commit chages"** to apply. Give a minute or so for github to build your website.
 
-There are three ways to install: as a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes), as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible), or forking/directly copying all of the theme files into your project.
 
-### Gem-based method
+- **Site Title**: Change the `title:` this is what shows up in the tab of the browser on your site
+- **Name**: Change the `name:` your name will show up as seen above
+- **Description**: Update the `description:` with a brief overview of your highlights and qualification
+- **profile_image**: place your profile image in assets/profile folder and update the directory
+- **Resume-url**: You can either link to externally stored pdf (ex. google drive) or save the pdf under assets/pdf/ folder and enter the directory  
 
-With Gem-based themes, directories such as the `assets`, `_layouts`, `_includes`, and `_sass` are stored in the theme’s gem, hidden from your immediate view. Yet all of the necessary directories will be read and processed during Jekyll’s build process.
+![GitHub Use Template](/assets/readme/main-page.png)
 
-This allows for easier installation and updating as you don't have to manage any of the theme files. To install:
+<br>
 
-1. Add the following to your `Gemfile`:
+- **External Links**: link your external accounts (linkedin, github, stackoverflow, medium, etc)
+![GitHub Use Template](/assets/readme/external-link.png) 
+Only the icons for the accounts that you enter will appear.
+*Example*:
+  ```yaml
+    external-links:    # input only your own url slug. The icons with missing entries will not appear.
+      linkedin: johndoe1       # https://www.linkedin.com/in/{your url slug} 
+      github: johndoe1         # https://github.com/{your url slug} 
+      stackoverflow: johndoe1  # https://stackoverflow.com/users/{your url slug}
+  ```
 
-   ```ruby
-   gem "minimal-mistakes-jekyll"
-   ```
 
-2. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
+- **Skills**: you can list your skills by category. It will  show up like below. Be careful with the identation.
+![GitHub Use Template](/assets/readme/skills.png) 
+  *Example*:
+    ```yaml
+      skills:
+        - category: 3D Modeling
+          tools:
+          - Onshape
+          - Solidworks
+          - Creo
+          - Fusion 360 
+        
+        - category: Prototyping
+          tools:
+          - SLA
+          - CNC
+          - FDM
+          - SLS
+          - DMLS
+          - PolyJet Printing
+          - Vacuum Casting
+    ```
+- **Contact Form**: you can set up the contact form to send the response to your email using [formspree](https://formspree.io/). You just need to sign up and create a new form. Then, add the 8-digit endpoint key!
+ 
+  ![formspreeimage](/assets/readme/formspree.png)
 
-   ```bash
-   bundle
-   ```
+  ```yaml
+  formspree-key:   https://formspree.io/f/{8-digit key}
+  ```
 
-3. Set the `theme` in your project's Jekyll `_config.yml` file:
+- **(optional)** you chan change your color theme by inputting color hex code for a few variables. Feel free to be creative!
+  ```yaml
+  colors: # this is the basic theme
+    text: "##1a1c20"
+    border: "#ddd"
+    link: "#4a76ee"
+    highlight: "#0c0cf2"
+    background: "#ffffff"
+    light_background: "#f3f5fb"
+  ```
+  There is a few suggested themes in `_config.yml`
+  - **mint green**
+  ![GitHub Use Template](/assets/readme/mint-green.png) 
+  - **lemon**
+  ![GitHub Use Template](/assets/readme/lemon.png) 
+  - **cotton-candy**
+  ![GitHub Use Template](/assets/readme/cotton-candy.png) 
 
-   ```yaml
-   theme: minimal-mistakes-jekyll
-   ```
+## Adding projects
+For each project, you need to create a markdown file within _projects folder. I recommend created a folder for each project so that it is easy to organize image files that you may want to add. To get started, follow the below steps.
 
-To update the theme run `bundle update`.
+#### Creating a markdown file in Github
+1. Go to **_project** folder. Make sure you are in the correct level.
+![GitHub Use Template](/assets/readme/go-to-project-directory.png) 
+2. In the right side of the screen, click add file - create new file.  
+![GitHub Use Template](/assets/readme/create-new-file.png) 
+3. in the available field, enter the name of the folder: **{your-project-name}** then hit "/". This will create a folder for the project.   
+![GitHub Use Template](/assets/readme/enter-folder-name.png) 
+4. create a markdown file by entering index.md.   
+![GitHub Use Template](/assets/readme/index-md.png) 
+5. In the text field paste the below "front-matter" template and fill out the title, description, skills, and name of the main project image that you want to use. This is the summary of the project that will be used to display the project in the main page. **Be careful** not to leave any space before the front matter deliminators "---". It causes syntax error, and  your page will not be built.
 
-### Remote theme method
+    ```md
+    ---
+    layout: post
+    title: project title
+    description:  short description of the project
+    skills: 
+    - skill 1
+    - skill 2
+    main-image: /project.webp 
+    ---
+    ```
+6. then click **Submit changes** to create the file.
+7. Upload your image in the same folder by clicking **Add file - upload files**.
+  
+![GitHub Use Template](/assets/readme/create-new-file.png) 
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+8. Drag your image file, then click **commit changes**.
+    
+![GitHub Use Template](/assets/readme/upload-files.png) 
 
-To install:
+9. Allow a minute or so for the build. It will create a project section that looks like this below.
+![GitHub Use Template](/assets/readme/project-section.png) 
 
-1. Create/replace the contents of your `Gemfile` with the following:
+### Understanding markdown file your project page
+If you want to add addtional details, you can go back to the index.md file and add more contents below the front matter. It will be helpful if you become familiarized with markdown syntax. If you are interested in learning, see [markdown guide](https://www.markdownguide.org/cheat-sheet/). I set up a couple styling to allow you to embed multiple images and video easily and become responsive for mobile view. See the [demo](https://leea12.github.io/)) project. You can also add code blocks, blockquote, and tables. 
 
-   ```ruby
-   source "https://rubygems.org"
+#### YAML frontmatter
+YAML frontmatter gets pulled by the site to fill contents for the summary section of your project which gets displayed in the main index page and top section of the project page. 
 
-   gem "github-pages", group: :jekyll_plugins
-   gem "jekyll-include-cache", group: :jekyll_plugins
-   ```
-
-2. Add `jekyll-include-cache` to the `plugins` array of your `_config.yml`.
-
-3. Fetch and update bundled gems by running the following [Bundler](http://bundler.io/) command:
-
-   ```bash
-   bundle
-   ```
-
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.22.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
-
-**Looking for an example?** Use the [Minimal Mistakes remote theme starter](https://github.com/mmistakes/mm-github-pages-starter/generate) for the quickest method of getting a GitHub Pages hosted site up and running. Generate a new repository from the starter, replace sample content with your own, and configure as needed.
-
-## Usage
-
-For detailed instructions on how to configure, customize, add/migrate content, and more read the [theme's documentation](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/).
-
+```markdown
 ---
+layout: post
+title: Super Heavy Booster Catch (Demo Only)
+description:  (I have never been employed by / affiliated with SpaceX. This is for demo use only) 
+    Developing the Super Heavy booster catch project involves designing a robust launch tower with "chopstick" arms, advanced control systems for precise booster alignment, and integrating sophisticated software for real-time trajectory adjustments and structural engineering to handle immense forces.
+skills: 
+  - Structural analysis
+  - Aerodynamic design
+  - Propulsion system integration
+  - Control Algorithem 
+  - Welding
+  - Metal forming
+  - Thermal simulation
 
-## Contributing
-
-Found a typo in the documentation or interested in [fixing a bug](https://github.com/mmistakes/minimal-mistakes/issues)? Then by all means [submit an issue](https://github.com/mmistakes/minimal-mistakes/issues/new) or [pull request](https://help.github.com/articles/using-pull-requests/). If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
-
-For help with using the theme or general Jekyll support questions, please use the [Jekyll Talk forums](https://talk.jekyllrb.com/).
-
-### Pull Requests
-
-When submitting a pull request:
-
-1. Clone the repo.
-2. Create a branch off of `master` and give it a meaningful name (e.g. `my-awesome-new-feature`).
-3. Open a pull request on GitHub and describe the feature or fix.
-
-Theme documentation and demo pages can be found in the [`/docs`](docs) if submitting improvements, typo corrections, etc.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-To test the theme, run `bundle exec rake preview` and open your browser at `http://localhost:4000/test/`. This starts a Jekyll server using content in the `test/` directory. As modifications are made to the theme and test site, it will regenerate and you should see the changes in the browser after a refresh.
-
+main-image: /project2.jpg
 ---
+```
+#### Adding contents
+use "## (title)" as the title of each section
+## Section title
+```markdown
+## section title
+```
 
-## Credits
+### sub-section title
+Use this to have subsection if needed
+```markdown
+### sub-section title
+```
 
-### Creator
+#### Adding a new line
+you can add 2 spaces "  " or <br> to start a new line
+```markdown
+<br>
+```
 
-**Michael Rose**
-
-- <https://mademistakes.com>
-- <https://twitter.com/mmistakes>
-- <https://github.com/mmistakes>
-
-### Icons + Demo Images:
-
-- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
-- [Font Awesome](http://fontawesome.io/)
-- [Unsplash](https://unsplash.com/)
-
-### Other:
-
-- [Jekyll](http://jekyllrb.com/)
-- [jQuery](http://jquery.com/)
-- [Susy](http://susy.oddbird.net/)
-- [Breakpoint](http://breakpoint-sass.com/)
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-- [FitVids.JS](http://fitvidsjs.com/)
-- [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav)
-- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-- [Gumshoe](https://github.com/cferdinandi/gumshoe)
-- [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
-- [Lunr](http://lunrjs.com)
-
+#### Adding a horizontal line
+you can add a horizontal line to separate fields by using "---"
+```markdown
 ---
+```
 
-## License
+#### Embedding images 
+Add images using the following format. You can put multiple images in a single row by putting in multiple entries for "images=". You can also overide the size of the all images in the single row setting the height in pixel.
+{% include image-gallery.html images="{image1 path}, {image2 path}" height="400"%}
 
-The MIT License (MIT)
+```markdown
+{% include image-gallery.html images="project2.jpg" height="400" %}
+```
+#### Embedding youtube video
+Add youtube video using the following format
+{% include youtube-video.html id="{11-digit id}" autoplay= "false"%}
+```markdown
+{% include youtube-video.html id="{11-digit id}" autoplay= "false"%}
+```
+This is where you get the 11-digit id  
 
-Copyright (c) 2013-2020 Michael Rose and contributors
+![image](https://github.com/user-attachments/assets/4ffc509a-9e22-40bc-b503-421443ab2b66)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+#### Adding bold text
+add bold text by wrapping with "**"
+```markdown
+this is how you input **bold text**
+```
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+#### Adding italic text
+add italic text by wrapping with "*"
+```markdown
+Italicized text is the *cat's meow*.
+```
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### adding underline
+underline is not supported in markdown, but you can still use html within markdown
+```
+<u>This text is underlined</u>
+```
 
-Minimal Mistakes incorporates icons from [The Noun Project](https://thenounproject.com/) 
-creators Garrett Knoll, Arthur Shlain, and tracy tam.
-Icons are distributed under Creative Commons Attribution 3.0 United States (CC BY 3.0 US).
+#### Adding ordered list
+```markdown
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
+```
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
 
-Minimal Mistakes incorporates [Font Awesome](http://fontawesome.io/),
-Copyright (c) 2017 Dave Gandy.
-Font Awesome is distributed under the terms of the [SIL OFL 1.1](http://scripts.sil.org/OFL) 
-and [MIT License](http://opensource.org/licenses/MIT).
+#### Adding unordered list
+```markdown
+- First item
+- Second item
+- Third item
+- Fourth item
+```
+- First item
+- Second item
+- Third item
+- Fourth item
 
-Minimal Mistakes incorporates photographs from [Unsplash](https://unsplash.com).
+#### Adding code block
+To add a code block wrap your script with ```. Adding the language after ''' will activate sytax highlighting.
+![image](https://github.com/user-attachments/assets/8b8a6c6a-1599-4b03-bcc3-b087bc0f5c49)
 
-Minimal Mistakes incorporates [Susy](http://susy.oddbird.net/),
-Copyright (c) 2017, Miriam Eric Suzanne.
-Susy is distributed under the terms of the [BSD 3-clause "New" or "Revised" License](https://opensource.org/licenses/BSD-3-Clause).
+```python
+def start()
+  print("time to start!")
+```
 
-Minimal Mistakes incorporates [Breakpoint](http://breakpoint-sass.com/).
-Breakpoint is distributed under the terms of the [MIT/GPL Licenses](http://opensource.org/licenses/MIT).
+#### Adding external links
+to add extra links, wrap the text in "[ ]" then add the add the hyperlink wrappted by "( )"
+```markdown
+[Wikipedia](https://en.wikipedia.org)
+```
+#### Adding block quote
+To add a blockquote add ">" at the beginning of the text
+```markdown
+> A blockquote would look great if you need to highlight something
+```
+> A blockquote would look great if you need to highlight something
 
-Minimal Mistakes incorporates [FitVids.js](https://github.com/davatron5000/FitVids.js/),
-Copyright (c) 2013 Dave Rubert and Chris Coyier.
-FitVids is distributed under the terms of the [WTFPL License](http://www.wtfpl.net/).
+#### Adding table
+To add a table, use the following format
+```markdown
+| Header 1 | Header 2 |
+|----------|----------|
+| Row 1, Col 1 | Row 1, Col 2 |
+| Row 2, Col 1 | Row 2, Col 2 |
+```
+| Header 1 | Header 2 |
+|----------|----------|
+| Row 1, Col 1 | Row 1, Col 2 |
+| Row 2, Col 1 | Row 2, Col 2 |
 
-Minimal Mistakes incorporates [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/),
-Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com.
-Magnific Popup is distributed under the terms of the MIT License.
+** make sure to leave a line betwen the table and the header
 
-Minimal Mistakes incorporates [Smooth Scroll](http://github.com/cferdinandi/smooth-scroll),
-Copyright (c) 2019 Chris Ferdinandi.
-Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [Gumshoejs](http://github.com/cferdinandi/gumshoe),
-Copyright (c) 2019 Chris Ferdinandi.
-Smooth Scroll is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [jQuery throttle / debounce](http://benalman.com/projects/jquery-throttle-debounce-plugin/),
-Copyright (c) 2010 "Cowboy" Ben Alman.
-jQuery throttle / debounce is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [GreedyNav.js](https://github.com/lukejacksonn/GreedyNav),
-Copyright (c) 2015 Luke Jackson.
-GreedyNav.js is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [Jekyll Group-By-Array](https://github.com/mushishi78/jekyll-group-by-array),
-Copyright (c) 2015 Max White <mushishi78@gmail.com>.
-Jekyll Group-By-Array is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [@allejo's Pure Liquid Jekyll Table of Contents](https://allejo.io/blog/a-jekyll-toc-in-liquid-only/),
-Copyright (c) 2017 Vladimir Jimenez.
-Pure Liquid Jekyll Table of Contents is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
-Minimal Mistakes incorporates [Lunr](http://lunrjs.com),
-Copyright (c) 2018 Oliver Nightingale.
-Lunr is distributed under the terms of the [MIT License](http://opensource.org/licenses/MIT).
