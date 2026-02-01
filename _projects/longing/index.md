@@ -11,7 +11,7 @@ skills:
   - S3 cloudfront
   - CodeDeploy
 
-main-image: /project2.jpg
+main-image: /image.png
 ---
 
 ---
